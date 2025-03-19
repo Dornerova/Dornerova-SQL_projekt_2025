@@ -7,7 +7,8 @@
             "driver": "PostgreSQL",
             "name": "DB_notebook",
             "database": "postgres",
-            "username": "postgres"
+            "username": "postgres",
+            "password": "Dexik05012015!"
         }
     ]
 }
