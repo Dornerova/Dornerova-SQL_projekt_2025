@@ -81,7 +81,7 @@ JOIN (
 	ON pyi.payroll_year = cp2.date_year
 ORDER BY cp2.date_year, pyi.industry, price_value
 ; 
---potřbuju jen společné roky
+--potřebuji jen společné roky
 
 WITH common_years AS (
     SELECT DISTINCT pyi.payroll_year AS Year
@@ -148,7 +148,7 @@ JOIN common_years cy
 	ON pyi.payroll_year = cy."year" 
 ORDER BY cp2.date_year, pyi.industry, price_value; 
 
---abych zjistila, za jdou nějaké roky pouze v payroll nebo price
+--abych zjistila, za jsou nějaké roky pouze v payroll nebo price
 
 SELECT DISTINCT payroll_year AS Year
 FROM czechia_payroll
